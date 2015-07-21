@@ -35,7 +35,7 @@ Also you can edit the source codes to change the default input filename.
 
 #What's the basic idea of  the algorithms ?
 
-For the first feature, calculate the total number of times each word has been tweeted.
+For the first feature"calculate the total number of times each word has been tweeted"
 
 I thought of implementing a Trie Tree to relieve the searching complexity. However, for the whole ASCII set ,it may significantly increase the storage cost.  
 Since the searching and comparing methods in Matlab is already very efficient, I choose to directly use the library functions of Matlab.
@@ -45,7 +45,7 @@ find();
 strcmp();
 
 
-For the second feature, calculate the median number of unique words per tweet, and update this median as tweets come in.
+For the second feature"calculate the median number of unique words per tweet, and update this median as tweets come in"
 
 To reduce the sorting complexity, I used a probability model to solve this problem. 
 Since the maximum length of each tweet is known. I set it as 140. Then I created an array that hold the statistics of tweets's length.
@@ -60,7 +60,7 @@ This is my own design that I am a little bit proud of.
 
 Here I provide the runtime on my computer:
 
-For the first feature, calculate the total number of times each word has been tweeted.
+For the first feature"calculate the total number of times each word has been tweeted"
 
 		Data Amount			Runtime
 		3  tweets			0.043373s
@@ -70,7 +70,7 @@ For the first feature, calculate the total number of times each word has been tw
 
 this is not perfect, because the complexity become much higher when dealing with large data set.
 
-For the second feature, calculate the median number of unique words per tweet, and update this median as tweets come in.
+For the second feature"calculate the median number of unique words per tweet, and update this median as tweets come in"
 
 		Data Amount			Runtime
 		3  tweets			0.113278s
