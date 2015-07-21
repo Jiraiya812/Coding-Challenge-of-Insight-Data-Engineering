@@ -1,4 +1,4 @@
-%% median_unique.m
+% median_unique.m
 % File Description
 % Auther: Yi Shan 
 % Location: University of Waterloo, Ontario, Canada
@@ -9,13 +9,32 @@
 %%
 clc;clear all;
 tic;
-InputDirectory='tweet_input/';
-IutputFilename='tweets1000.txt';
+
+
+%%  Path Setting Logic
+Flag_UsingCurrentPath=0;
+
+if Flag_UsingCurrentPath
+    BasePath=cd;
+else
+BasePath=cd;
+position=strfind(BasePath,'src');
+if length(position)==0
+BasePath=[cd '/'];
+else
+position=position(length(position));
+BasePath=BasePath(1:position-1);
+end
+end
+%%
+
+InputDirectory=[ BasePath 'tweet_input/']
+IutputFilename='tweets.txt';
 
 fprintf(['The input tweet file name is:' IutputFilename '\n']);
 fprintf(' median_unique is running...\n');
 
-OntputDirectory='tweet_output/';
+OntputDirectory=[ BasePath 'tweet_output/'];
 OutputFilename_1='ft1.txt';
 OutputFilename_2='ft2.txt';
 
