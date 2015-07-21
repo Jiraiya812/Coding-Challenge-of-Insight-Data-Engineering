@@ -33,7 +33,7 @@ I thought of implementing a Trie Tree to relieve the searching complexity. Howev
 Since the searching and comparing methods in Matlab is already very efficient, I choose to directly use the library functions of Matlab.
 
 
-*For the second feature"calculate the median number of unique words per tweet, and update this median as tweets come in"
+* For the second feature"calculate the median number of unique words per tweet, and update this median as tweets come in"
 
 To reduce the sorting complexity, I used a probability model to solve this problem. 
 Since the maximum length of each tweet is known. I set it as 140. Then I created an array that hold the statistics of tweets's length.
