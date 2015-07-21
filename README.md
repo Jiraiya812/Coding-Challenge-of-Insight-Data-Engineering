@@ -27,7 +27,7 @@ Also you can edit the source codes to change the default input filename.
 
 #What's the basic idea of  the algorithms ?
 
-For the first feature"calculate the total number of times each word has been tweeted"
+* *For the first feature"calculate the total number of times each word has been tweeted"
 
 I thought of implementing a Trie Tree to relieve the searching complexity. However, for the whole ASCII set ,it may significantly increase the storage cost.  
 Since the searching and comparing methods in Matlab is already very efficient, I choose to directly use the library functions of Matlab.
