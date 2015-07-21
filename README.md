@@ -61,10 +61,8 @@ This is my own design that I am a little bit proud of.
 Here I provide the runtime on my computer:
 
 For the first feature, calculate the total number of times each word has been tweeted.
-Data Amount	             Runtime
-3  tweets	             0.043373s
-1000 tweets	             0.79668 s
-10000 tweets	         42.812512s
+Data Amount	        3  tweets        1000 tweets	  10000 tweets
+Runtime             0.043373s        0.79668s       42.812512s
 
 this is not perfect, because the complexity become much higher when dealing with large data set.
 
