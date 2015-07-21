@@ -7,7 +7,6 @@ Location: University of Waterloo, Ontario, Canada
 
 Email : y9shan@uwaterloo.ca
 
-Date of Last Edit: 2015/07/20
 
 
 
