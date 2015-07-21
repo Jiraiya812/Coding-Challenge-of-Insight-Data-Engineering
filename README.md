@@ -67,15 +67,15 @@ For the first feature, calculate the total number of times each word has been tw
 		1000 tweets			0.79668 s
 		10000 tweets		42.812512s
 
-	Data Amount	3  tweet	1000 tweets	10000 tweets
-	Runtim		0.043373	0.79668s	42.812512s
 
 this is not perfect, because the complexity become much higher when dealing with large data set.
 
 For the second feature, calculate the median number of unique words per tweet, and update this median as tweets come in.
 
-	Data Amount	3  tweet	1000 tweets	  10000 tweets
-	Runtim		0.113278s 	0.279070s 	1.718570 s
+		Data Amount			Runtime
+		3  tweets			0.113278s
+		1000 tweets			0.279070s
+		10000 tweets		1.718570s
 
 you can see that the runtime for feature 2 is increasing linearly with the data amount.
 #Thank You!
