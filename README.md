@@ -75,9 +75,6 @@ Data Amount	             Runtime
 10000 tweets	         1.718570 s
 
 you can see that the runtime for feature 2 is increasing linearly with the data amount.
-
+#Thank You!
 └(^o^)┘  └(^o^)┘   └(^o^)┘   └(^o^)┘  └(^o^)┘   └(^o^)┘   └(^o^)┘   └(^o^)┘   └(^o^)┘  └(^o^)┘   └(^o^)┘
-
-Thank You!
-└(^o^)┘
 If you have any other questions, please feel free to email me.
