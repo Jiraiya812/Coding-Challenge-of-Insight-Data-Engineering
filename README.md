@@ -46,7 +46,7 @@ strcmp();
 
 
 For the second feature"calculate the median number of unique words per tweet, and update this median as tweets come in"
-
+![Example Repo Structure](images/directory-pic.png)
 To reduce the sorting complexity, I used a probability model to solve this problem. 
 Since the maximum length of each tweet is known. I set it as 140. Then I created an array that hold the statistics of tweets's length.
 As the new tweets coming in, the only updating is to increase the corresponding statistic in the array and get the distribution of the tweets' length .
