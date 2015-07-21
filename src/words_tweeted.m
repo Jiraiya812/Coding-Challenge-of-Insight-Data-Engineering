@@ -9,13 +9,29 @@
 %%
 tic;
 clc;clear all;
-InputDirectory='tweet_input/';
-IutputFilename='tweets1000.txt';
+%%  Path Setting Logic
+Flag_UsingCurrentPath=0;
+if Flag_UsingCurrentPath
+    BasePath=cd;
+else
+BasePath=cd;
+position=strfind(BasePath,'src');
+if length(position)==0
+BasePath=[cd '/'];
+else
+position=position(length(position));
+BasePath=BasePath(1:position-1);
+end
+end
+BasePath
+%%
+InputDirectory=[ BasePath 'tweet_input/'];
+IutputFilename='tweets.txt';
 
 fprintf(['The input tweet file name is:' IutputFilename '\n']);
 fprintf(' words_tweeted is running...\n');
 
-OntputDirectory='tweet_output/';
+OntputDirectory=[ BasePath 'tweet_output/'];
 OutputFilename_1='ft1.txt';
 OutputFilename_2='ft2.txt';
 
@@ -44,4 +60,3 @@ fid_output=fopen([OntputDirectory OutputFilename_1],'wt');
  fclose(fid_output);
 fprintf(' words_tweeted done, check folder /tweet_output/ft1.txt \n');
 toc;
-
