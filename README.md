@@ -21,7 +21,7 @@ This whole program is implemented by Yi Shan using MATLAB 2012b.
 
 If you have MATLAB on your computer,your can run the source files in matlab warkspace or run the run.sh directly.
 
-The default input filename I set is 'tweets.txt'  you can replace it with other input files with the same name. 
+The default input filename I set is 'tweets.txt'.I already put 1000 tweets in that file. You can replace it with other input .txt files with the same name. 
 Also you can edit the source codes to change the default input filename.
 
 
@@ -41,7 +41,7 @@ As the new tweets coming in, the only updating is to increase the corresponding 
 After that, it is easy to find the new median by calculate 0.5 point of probability distribution function.
 
 Therefore the complexity of updating the median will not increase when the tweets keep coming in. 
-This is my own design that I am a little bit proud of.
+This is my own design that I am a little bit proud of. Hope you like it!
 
 
 #What's the performance of the program ?
