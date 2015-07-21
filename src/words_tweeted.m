@@ -23,7 +23,6 @@ position=position(length(position));
 BasePath=BasePath(1:position-1);
 end
 end
-BasePath
 %%
 InputDirectory=[ BasePath 'tweet_input/'];
 IutputFilename='tweets.txt';
